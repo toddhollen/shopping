@@ -15,7 +15,7 @@
 
 <div class="title">
 
-<h1 class="store">Walmart</h1>
+<h1 class="store" data-name='Walmart'></h1>
 
 <h1>Shopping List</h1>
 
@@ -23,26 +23,27 @@
 
 <div class="entry">
 
-<input id="store-input" placeholder="Enter Store Name"/>
-	<button id="store-add">Add Store</button>
+<div id="store-input">
+<input id="store-field" placeholder="Enter Store Name"/>
+	<button type='submit' id="store-add">Add Store Name</button>
+</div>
 
-<input id="list-item" placeholder="Enter Shopping Item"/>
-	<button id="item-add">Add Item</button>
+
+<div id="list-item">
+<input placeholder="Enter Shopping Item"/>
+	<button type='submit' id="item-add">Add Item</button>
+</div>
 
 </div>
 
 </section>
 
-<section ID="list">
+<section class="shopping-list">
 
 <h2> Your List </h2>
 
 <ul class="list">
-	<li>Milk</li>
-	<li>Eggs</li>
-	<li>Fish</li>
-	<li>Hummas</li>
-	<li>Tomatoes</li>
+	<li></li>
 </ul>
 
 	
