@@ -8,7 +8,8 @@ $(document).ready(function() {
 
 		//Add store name to title\\
 		var storeName = $("#store-field").val();
-		$('.store').text(storeName)
+		$('.store').text(storeName +' List')
+		.hide().slideDown(300);
 		
 		//Show Add Item Form\\
 		$('#list-item').slideDown(800);
@@ -35,7 +36,12 @@ $('#store-input').keyup(function(event){
 		item.text(itemText);
 
 		//Adds it to list
-		$(".shopping-list ul.list").append(item);
+		$(item).appendTo(".shopping-list ul.list")
+		.hide().slideDown(300);		
+		
+		//Clears item from form
+		$('#list-item input').val('');
+	
 	});
 
 $('#list-item input').keyup(function(event){
@@ -43,6 +49,16 @@ $('#list-item input').keyup(function(event){
 			event.preventDefault();
 			$('#item-add').click();
 		};
-	});	
+	});
+
+//Check off items
+		$('.list').on('click', 'li', function(){
+			$(this).toggleClass('strike');
+	});
+
+//Delete Items
+		$('.list').on('dblclick', 'li', function(){
+			$(this).fadeOut(500);
+	});
 
 });
