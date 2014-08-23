@@ -30,7 +30,7 @@ $('#store-input').keyup(function(event){
 		
 		//Get to Pass
 		var item = $('<li></li>');
-		var image = $('<img class="delete" src="images/delete.png">');
+		var image = $('<img class="delete" src="images/Delete.png">');
 		var itemText = $('#list-item input').val();
 
 		//Sets values to li
