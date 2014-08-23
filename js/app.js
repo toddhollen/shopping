@@ -30,6 +30,7 @@ $('#store-input').keyup(function(event){
 		
 		//Get to Pass
 		var item = $('<li></li>');
+		var image = $('<img class="delete" src="images/delete.png">');
 		var itemText = $('#list-item input').val();
 
 		//Sets values to li
@@ -38,7 +39,9 @@ $('#store-input').keyup(function(event){
 		//Adds it to list
 		$(item).appendTo(".shopping-list ul.list")
 		.hide().slideDown(300);		
-		
+
+		$(image).appendTo(item)
+
 		//Clears item from form
 		$('#list-item input').val('');
 	
@@ -57,8 +60,7 @@ $('#list-item input').keyup(function(event){
 	});
 
 //Delete Items
-		$('.list').on('dblclick', 'li', function(){
-			$(this).fadeOut(500);
+		$('.list').on('click', '.delete', function(){
+			$(this).parent().fadeOut(500);
 	});
-
 });
