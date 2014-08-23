@@ -82,7 +82,7 @@ button:hover{
 
 .list{
 	margin: 20px auto;
-	max-width: 75%;
+	max-width: 200px;
 	display: block;
 }
 
@@ -102,12 +102,6 @@ button:hover{
 .Instructions li{
 	list-style-type: circle;
 	padding: 3px 0 0 0;
-}
-
-.delete{
-	float: right;
-	height: 20px;
-	display: inline-block;
 }
 
 /* Jquery Specific */
