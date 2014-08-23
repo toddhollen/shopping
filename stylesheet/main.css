@@ -1,10 +1,5 @@
-html{
-	min-height: 100%;
-	background: #125eea;
-	background: -webkit-radial-gradient(white, #125eea);
- 	background:    -moz-radial-gradient(white, #125eea);
-  	background:         radial-gradient(white, #125eea);
-  	background-repeat: no-repeat;
+body{
+	background-color: #125eea;
 }
 
 #container{
@@ -83,5 +78,5 @@ li{
 }
 
 .store{
-	display: none;
+	display: inline;
 }
